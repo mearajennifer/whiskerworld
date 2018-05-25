@@ -1,0 +1,86 @@
+WhiskerWorld Adventure Game
+- Based on the TV Show "WestWorld", except played by cats! The user goes to the
+  futuristic wild west themepark, WhiskerWorld, where they can play a "hero" cat
+  or a "bandit" cat.
+
+-------------------------------------------------------------------------------
+BASIC RULES
+-------------------------------------------------------------------------------
+- 1 player
+- Prompt player for name, cat type (tuxedo, tabby, calico, etc.) stores variables.
+- Prompt player to choose white hat (hero story line) or black hat (bandit story
+  line). Both stories encounter the same characters, but the player will need to
+  choose a different actions. Experience will be set to hero points or bandit
+  points. Work towards that goal and points go up; do something wrong and points
+  go down.
+- Program gets player decisions for adventure which determine next steps in 
+  decision tree.
+- Player wins in 2 scenarios: 
+    - “Hero” track: Make decisions/win games/get others on your side and become
+      the town sheriff.
+    - “Bandit” track: Make decisions/win games/get others on your side and
+      become the gang leader.
+    - Otherwise, you’ll go home feeling foolish and won’t be invited back to the
+      park.
+- See DECISION TREE file for specifics on story.
+
+-------------------------------------------------------------------------------
+NICE TO HAVES
+-------------------------------------------------------------------------------
+- Mini-games within the game:
+    - More than just choose A, B, C, D at each step. Add interactive games that
+      fall somewhat to chance.
+    - Racetrack: User enters power/control levels at various steps around a
+      racetrack to win the race but not lose control and crash.
+    - Dice game: User plays a dice game against opponents to win treats or get
+      info out of people.
+    - Cat fight: Similar to the Racetrack game.
+    - Riddler: Some kind of traveller the user meets along the way. Has riddles
+      or puzzles to solve
+- Track experience level to influence outcomes of some of these mini-games .
+
+-------------------------------------------------------------------------------
+PSEUDOCODE WORKFLOW
+-------------------------------------------------------------------------------
+- Intro to WhiskerWorld. Program asks user for their name, cat type, and first
+  choice: hero or villain?
+- Game play:
+    - Present scenario and choice of actions (decision tree)
+    - User chooses one option
+    - That option either helps them get closer or further from their goal of
+      being a hero or a villain in WhiskerWorld. If they make too many wrong
+      choices, they’ll be sent home early.
+    - If they win, print happy ending. If they lose, print sad ending.
+
+-------------------------------------------------------------------------------
+DATA TO TRACK IN GAME
+-------------------------------------------------------------------------------
+- User info
+- User choices
+- Nice to haves:
+    - User choices
+    - Random integers
+    - Experience levels
+
+-------------------------------------------------------------------------------
+WestWorld Character     WhiskerWorld character      Role
+-------------------------------------------------------------------------------
+Dolores Abernathy       Dolores Aber-meow-thy       Rancher’s daughter
+Peter Abernathy         Peter Aber-meow-thy         Rancher
+Maeve Millay            Miss Kitty                  Saloon owner
+Teddy Flood             Teddy Fleas                 Gunslinger
+Sheriff Pickett         Sheriff Pawkit              The lawman
+Kissy                   Lion (Lyin’) Leo            Gambling man
+Lawrence                Claw-rence                  Bandit
+Hector Escaton          Hiss-tor Es-kitten          Big bad bandit
+Armistice               Armist-hiss                 Bandit
+Clem Pennyfeather       Clementine Purryfeather     Store owner
+n/a                     Sphinx                      Riddler
+
+-------------------------------------------------------------------------------
+WestWorld Place         WhiskerWorld Place          Type
+-------------------------------------------------------------------------------
+Sweetwater              Whispurr Ridge              Main town
+Las Mudas               Los Gatos                   Small town nearby
+Python Pass             Purebred Pass               Bandit camp
+Pariah                  Goldtail                    Gold mining area
